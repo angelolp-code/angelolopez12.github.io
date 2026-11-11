@@ -1,0 +1,37 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: Arial, sans-serif; background-color: #f4f4f4; }
+h2 { text-align: center; margin-bottom: 20px; }
+section { padding: 50px 20px; }
+
+header { background-color: #1a1a1a; display: flex; justify-content: space-between; padding: 15px 30px; }
+header h1 { color: #ff6600; }
+nav a { color: white; text-decoration: none; margin-left: 15px; }
+nav a:hover { color: #ff6600; }
+
+#inicio { background-color: #333; color: white; text-align: center; padding: 100px 20px; }
+
+
+.boton { display: inline-block; background-color: #ff6600; color: white; text-decoration: none; padding: 12px 25px; border-radius: 20px; transition: 0.3s; }
+.boton:hover { transform: scale(1.1); }
+
+#productos { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+#productos h2 { width: 100%; }
+.tarjeta { background-color: white; width: 250px; text-align: center; padding-bottom: 15px; border-radius: 10px; transition: 0.3s; }
+.tarjeta:hover { transform: translateY(-10px); }
+.tarjeta img { width: 100%; height: 180px; object-fit: cover; }
+
+#contacto { background-color: white; }
+form { max-width: 400px; margin: auto; display: flex; flex-direction: column; gap: 10px; }
+input, textarea, form button { padding: 10px; }
+form button { background-color: #ff6600; color: white; border: none; cursor: pointer; }
+#resultado { text-align: center; margin-top: 10px; }
+
+footer { background-color: #1a1a1a; color: white; text-align: center; padding: 15px; }
+
+.flotante { position: fixed; bottom: 20px; right: 20px; background-color: #25d366; color: white; text-decoration: none; padding: 12px 18px; border-radius: 30px; }
+
+@media (max-width: 768px) {
+    header { flex-direction: column; text-align: center; }
+    .tarjeta { width: 100%; }
+}
